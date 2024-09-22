@@ -15,7 +15,7 @@ class RegisteredUserController extends Controller
     }
 
 
-    public function store(Request $request)
+    public function store()
     {
         $UserData = $request-> validate([
             'name' => ['required'],
