@@ -17,7 +17,7 @@ class RegisteredUserController extends Controller
 
     public function store()
     {
-        $UserData = $request-> validate([
+        $UserData = request()-> validate([
             'name' => ['required'],
             'email' => ['required', 'email'],
             'password' => ['required','confirmed', Password::min(6)],
