@@ -13,7 +13,7 @@ class SessionController extends Controller
         return view('auth.login');
     }
 
-    public function store(Request $request)
+    public function store()
     {
         $attributes = request()->validate([
             'email' => ['required', 'email'],
